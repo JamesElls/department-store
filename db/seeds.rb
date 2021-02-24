@@ -6,10 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require "Faker"
+Department.delete_all
 
-3.times do
-    2.times do
-        d.items.create
-    end
-end
+Department.create title:"Cannibis"
+Department.create title:"Lord of The Rings Weaponry"
+Department.create title:"Pokemon"
