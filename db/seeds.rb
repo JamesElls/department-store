@@ -43,3 +43,16 @@ d2.items.destroy_all
     )
 end
 
+
+#derek's items
+d3 = Department.third
+d3.items.destroy_all
+3.times do 
+    pokemonName = "#{Faker::Games::Pokemon.name}".camelcase
+    pokemonDescription ="This pokemon's move is #{Faker::Games::Pokemon.move}"
+    d3.items.create(name:pokemonName,
+    body: pokemonDescription,
+    price:500
+    # belongs_to:3
+    )
+end
