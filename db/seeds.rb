@@ -18,9 +18,10 @@ Department.create title:"Pokemon"
 
 
 #James' Items
+d1 = Department.first
+d1.items.destroy_all
 3.times do
-    d1 = Department.first
-    weedName = "#{Faker::Cannabis.buzzword}  #{Faker::Cannabis.strain}  #{Faker::Cannabis.terpene}"
+    weedName = "#{Faker::Cannabis.buzzword} #{Faker::Cannabis.terpene}".camelcase
     weedDescription = "This strain #{Faker::Cannabis.health_benefit}. It is also a #{Faker::Cannabis.type}"
     d1.items.create(name: weedName,
     price:420, 
