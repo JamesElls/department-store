@@ -9,7 +9,7 @@
 Department.delete_all
 
 Department.create title:"Cannibis"
-Department.create title:"Lord of The Rings Weaponry"
+Department.create title:"Books"
 Department.create title:"Pokemon"
 
 
@@ -27,6 +27,19 @@ d1.items.destroy_all
     price:420, 
     body: weedDescription
     # belongs_to:1
+    )
+end
+
+#Callie's Items
+d2 = Department.second
+d2.items.destroy_all
+3.times do
+    bookName = "#{Faker::Book.title}".camelcase
+    bookDescription = "This #{Faker::Book.genre} book was written by #{Faker::Book.author}."
+    d2.items.create(name: bookName,
+    price:19.99, 
+    body: bookDescription
+    # belongs_to:2
     )
 end
 
