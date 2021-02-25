@@ -10,10 +10,12 @@ export default (props) => {
                     <h1>{item.name}</h1>
                     <h3>{item.price}</h3>
                     <h3>{item.body}</h3>
+                    <a href = {`/departments/${department.id}/items/${item.id}/show`}>Buy Now</a>
                 </div>
             )
         })
     }
+
     return(
         <div>
             <h1>{department.title}</h1>

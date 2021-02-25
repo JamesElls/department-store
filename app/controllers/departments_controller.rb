@@ -1,11 +1,5 @@
 class DepartmentsController < ApplicationController
-    #Var for a department based on :id
-    
-
-
-    #Var for all departments
-    @departments = Department.all
-
+    before_action :all_departments
 
 
     def index
@@ -13,15 +7,17 @@ class DepartmentsController < ApplicationController
     end
 
     def show
-        #Var for a department based on the id
         @department = Department.find(params[:id])
 
-        #Var for items  
         @items = @department.items.all
 
         render component: "Department", props:{department: @department,items: @items}
+    end 
 
+    private
 
+    def all_departments
+        @departments = Department.all
     end 
 
 end
