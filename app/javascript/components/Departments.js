@@ -3,7 +3,6 @@ import React from 'react'
 export default (props) => {
 
     const {departments} =  props
-    console.log (departments)
 
     const renderDepartments = () => {
         return departments.map(department => {
