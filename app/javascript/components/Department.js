@@ -10,7 +10,7 @@ export default (props) => {
                     <h1>{item.name}</h1>
                     <h3>{item.price}</h3>
                     <h3>{item.body}</h3>
-                    <a href = {`/departments/${department.id}/items/${item.id}/show`}>Buy Now</a>
+                    <a href = {`/departments/${department.id}/items/${item.id}`}>Buy Now</a>
                 </div>
             )
         })
@@ -19,6 +19,7 @@ export default (props) => {
     return(
         <div>
             <h1>{department.title}</h1>
+            <a href = {`/departments`}>Return</a>
             {renderItems()}
         </div>
     )

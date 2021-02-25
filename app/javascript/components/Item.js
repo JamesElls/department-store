@@ -7,7 +7,7 @@ const Item = (props) => {
          <h1>{name}</h1>
          <p>{body}</p>
          <p>{price}</p>
-         <a href={`/Departments/${department_id}`}>Return</a>
+         <a href={`/departments/${department_id}`}>Return</a>
        </>
     )
 }
