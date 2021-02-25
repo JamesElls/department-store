@@ -46,7 +46,7 @@ end
 
 #derek's items
 d3 = Department.third
-d3.itmes.destroy_all
+d3.items.destroy_all
 3.times do 
     pokemonName = "#{Faker::Games::Pokemon.name}".camelcase
     pokemonDescription ="This pokemon's move is #{Faker::Games::Pokemon.move}"
