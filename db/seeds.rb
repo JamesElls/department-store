@@ -11,3 +11,21 @@ Department.delete_all
 Department.create title:"Cannibis"
 Department.create title:"Lord of The Rings Weaponry"
 Department.create title:"Pokemon"
+
+
+
+
+
+
+#James' Items
+3.times do
+    d1 = Department.first
+    weedName = "#{Faker::Cannabis.buzzword}  #{Faker::Cannabis.strain}  #{Faker::Cannabis.terpene}"
+    weedDescription = "This strain #{Faker::Cannabis.health_benefit}. It is also a #{Faker::Cannabis.type}"
+    d1.items.create(name: weedName,
+    price:420, 
+    body: weedDescription
+    # belongs_to:1
+    )
+end
+
