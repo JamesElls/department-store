@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   before_action :get_item, only: [:show]
   
   def show
- 
+
     
     puts @item
     render component: "Item", props:{item: @item, department: @department}

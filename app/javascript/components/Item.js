@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Item = (props) => {
     const {name, body, price, department_id} = props.item
     return(

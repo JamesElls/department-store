@@ -7,6 +7,7 @@ export default (props) => {
         return items.map(item => {
             return(
                 <div className ='Item-container'>
+                
                     <h1>{item.name}</h1>
                     <h3>${item.price}</h3>
                     <h3>{item.body}</h3>
@@ -18,9 +19,14 @@ export default (props) => {
 
     return(
         <div>
-            <h1 className='department-title'>{department.title}</h1>
+            <h1 className='department-title' >{department.title}</h1>
             <a className='button' href = {`/departments`}>Return</a>
+            
+        <div className = 'department-container'>
+            <h1>{department.title}</h1>
+            <a href = {`/departments`}>Return</a>
             {renderItems()}
+            </div>
         </div>
     )
 }
