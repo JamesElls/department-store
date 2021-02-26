@@ -37,7 +37,7 @@ d2.items.destroy_all
     bookName = "#{Faker::Book.title}".camelcase
     bookDescription = "This #{Faker::Book.genre} book was written by #{Faker::Book.author}."
     d2.items.create(name: bookName,
-    price:19.99, 
+    price:20, 
     body: bookDescription
     # belongs_to:2
     )
