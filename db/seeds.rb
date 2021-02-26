@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
 Department.delete_all
 
 Department.create title:"Cannibis"
@@ -33,15 +35,16 @@ end
 #Callie's Items
 d2 = Department.second
 d2.items.destroy_all
-3.times do
+6.times do
     bookName = "#{Faker::Book.title}".camelcase
     bookDescription = "This #{Faker::Book.genre} book was written by #{Faker::Book.author}."
     d2.items.create(name: bookName,
-    price:2000, 
+    price:Faker::Number.non_zero_digit, 
     body: bookDescription
     # belongs_to:2
     )
 end
+
 
 
 #derek's items

@@ -9,7 +9,7 @@ export default (props) => {
             return(
                 <div className = 'Department-container'>
                     <h1>{department.title}</h1>
-                    <a href={`http://localhost:3000/departments/${department.id}`}>shop now</a>
+                    <a className='button'href={`http://localhost:3000/departments/${department.id}`}>Shop Now</a>
                 </div>
             )
         })
@@ -21,3 +21,6 @@ export default (props) => {
         </div>
     )
 }
+
+//= require jquery
+//= require bootstrap-sprockets
