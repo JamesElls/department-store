@@ -7,7 +7,7 @@ export default (props) => {
     const renderDepartments = () => {
         return departments.map(department => {
             return(
-                <div className = 'Department-container'>
+                <div className = 'departments-container'>
                     <h1>{department.title}</h1>
                     <a href={`http://localhost:3000/departments/${department.id}`}>shop now</a>
                 </div>
