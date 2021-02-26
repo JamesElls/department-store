@@ -19,12 +19,10 @@ export default (props) => {
 
     return(
         <div>
-            <h1 className='department-title' >{department.title}</h1>
-            <a className='button' href = {`/departments`}>Return</a>
-            
+ 
         <div className = 'department-container'>
-            <h1>{department.title}</h1>
-            <a href = {`/departments`}>Return</a>
+            <h1 className='department-title'>{department.title}</h1>
+            <a className='button'href = {`/departments`}>Return</a>
             {renderItems()}
             </div>
         </div>

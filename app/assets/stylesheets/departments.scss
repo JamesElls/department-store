@@ -7,9 +7,10 @@
 
 
 .department-title {
-    border-style: double;
+
     text-align: center;
     font-family:cursive ;
+    border: double;
     
 }
 
@@ -33,18 +34,13 @@
       margin: 10px;
   }
 
-  .Department-container {
+  .departments-container {
       font-family:cursive ;
       text-align: center;
       border: double;
       border-color: darkcyan;
       margin: 10px;
   }
-
-
-.departments_container{
-    margin: 100px;
-}
 
 
 
